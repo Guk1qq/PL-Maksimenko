@@ -14,14 +14,7 @@ print('-'*50)
 pprint(c1)
 user_data = json.loads(c1)
 pprint(user_data)
-info = {
-        'company': (user_data["company"]),
-        'created_at': (user_data["created_at"]),
-        'email': (user_data["email"]),
-        'id': (user_data["id"]),
-        'name': (user_data["name"]),
-        'url': (user_data["url"])
-        }
+info = {'company': (user_data["company"]),'created_at': (user_data["created_at"]),'email': (user_data["email"]),'id': (user_data["id"]),'name': (user_data["name"]),'url': (user_data["url"])}
 pprint(info)
 print('-'*50)
 with open('Json.txt', 'w') as file_json:
